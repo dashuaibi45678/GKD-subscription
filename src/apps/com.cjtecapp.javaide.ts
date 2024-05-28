@@ -1,8 +1,8 @@
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
-    id: 'com.eastmoney.android.berlin',
-    name: '东方财富',
+    id: 'com.cjtecapp.javaide',
+    name: 'java编辑器IDE',
     groups: [
         {
             name: '开屏广告',
@@ -15,10 +15,29 @@ export default defineGkdApp({
             rules: [
                 {
                     matches: [
-                        '[text*=\'跳过\'][text.length<10][visibleToUser=true]'
+                        '[name=\'android.view.View\'][visibleToUser=true][width=110][height=110]'
                     ],
                     snapshotUrls: [
-                        'https://i.gkd.li/i/15447329'
+                        'https://i.gkd.li/i/15446936'
+                    ]
+                }
+            ]
+        },
+        {
+            name: '开屏广告（测试）',
+            key: 1,
+            quickFind: true,
+            actionMaximum: 1,
+            order: -12,
+            matchTime: 10000,
+            resetMatch: 'app',
+            rules: [
+                {
+                    matches: [
+                        '@View <3 FrameLayout <2 FrameLayout < FrameLayout < [vid=\'fl_third_ad\']'
+                    ],
+                    snapshotUrls: [
+                        'https://i.gkd.li/i/15446936'
                     ]
                 }
             ]

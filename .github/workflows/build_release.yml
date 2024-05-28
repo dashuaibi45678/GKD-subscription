@@ -24,7 +24,7 @@ jobs:
 
       - id: version
         run: |
-          version=$(node -e "import('@gkd-kit/tools').then((m) => m.stdoutGkdVersion("./dist/dashuaibi45678_gkd.version.json5"));")
+          version=$(node -e "import('@gkd-kit/tools').then((m) => m.stdoutGkdVersion("dist/dashuaibi45678_gkd.version.json5"));")
           echo "version=${version}" >> "$GITHUB_OUTPUT"
 
       - name: Git commit
@@ -61,6 +61,6 @@ jobs:
         if: ${{ steps.commit.outcome == 'success' && env.NPM_TOKEN != '' }}
         run: |
           pnpm config set //registry.npmjs.org/:_authToken ${{ secrets.NPM_TOKEN }}
-          node -e "import('@gkd-kit/tools').then((m) => m.updatePkgVersion("./dist/dashuaibi45678_gkd.json5"));"
+          node -e "import('@gkd-kit/tools').then((m) => m.updatePkgVersion("dist/dashuaibi45678_gkd.json5"));"
           pnpm publish --no-git-checks
           node -e "import('@gkd-kit/tools').then((m) => m.syncNpmmirror());"

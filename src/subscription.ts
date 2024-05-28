@@ -8,7 +8,7 @@ export default defineGkdSubscription({
   name: '大帅比45678的GKD订阅',
   version: 1.0,
   author: '大帅比45678',
-  checkUpdateUrl: './gkd.version.json5',
+  checkUpdateUrl: './dashuaibi45678_gkd.version.json5',
   supportUri: 'https://github.com/dashuaibi45678/GKD-subscription/issues',
   categories,
   globalGroups,

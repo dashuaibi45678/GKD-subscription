@@ -68,6 +68,6 @@
     "node": ">=20"
   },
   "allowScopes": [
-    "@dashuaibi45678"
+    "@dashuaibi45678/gkd-subscription"
   ]
 }

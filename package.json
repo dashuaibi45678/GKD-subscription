@@ -66,5 +66,8 @@
   "engineStrict": true,
   "engines": {
     "node": ">=20"
-  }
+  },
+  "allowScopes": [
+    "@dashuaibi45678"
+  ]
 }

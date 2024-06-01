@@ -48,9 +48,8 @@ export default defineGkdApp({
           matches: [
             '@View[visibleToUser=true] > TextView[text="广告"] + Image[text="feedback"] <<8 View'
           ],
-          snapshotUrls: [
-            'https://m.gkd.li/55350790/1d60b7e4-6937-4b95-8b71-d7ab2b38adb9',
-            'https://m.gkd.li/55350790/236466b7-102f-47e5-bd88-2d69b8903434'
+          exampleUrls: [
+            'https://m.gkd.li/55350790/1d60b7e4-6937-4b95-8b71-d7ab2b38adb9'
           ]
         },
         {
@@ -66,9 +65,8 @@ export default defineGkdApp({
           matches: [
             '@TextView[text="关闭此广告"] < View[childCount=3]'
           ],
-          snapshotUrls: [
-            'https://m.gkd.li/55350790/7ca6b000-3f1f-4604-a25c-04a9114a997e',
-            'https://m.gkd.li/55350790/2b249a65-c19e-40e0-82b4-7717f5f876f3'
+          exampleUrls: [
+            'https://m.gkd.li/55350790/7ca6b000-3f1f-4604-a25c-04a9114a997e'
           ]
         }
       ]
@@ -94,7 +92,7 @@ export default defineGkdApp({
           matches: [
             '@View[visibleToUser=true] > TextView[text="广告"] + Image[text*="feedback"] <<8 View'
           ],
-          snapshotUrls: [
+          exampleUrls: [
             'https://m.gkd.li/55350790/236466b7-102f-47e5-bd88-2d69b8903434'
           ]
         },
@@ -111,7 +109,7 @@ export default defineGkdApp({
           matches: [
             '@TextView[text="不感兴趣"] < View[childCount=2]'
           ],
-          snapshotUrls: [
+          exampleUrls: [
             'https://m.gkd.li/55350790/2b249a65-c19e-40e0-82b4-7717f5f876f3'
           ]
         },
@@ -128,7 +126,7 @@ export default defineGkdApp({
           matches: [
             '@TextView[text="与我无关"] < View[childCount=3]'
           ],
-          snapshotUrls: [
+          exampleUrls: [
             'https://m.gkd.li/55350790/7c990a80-2217-459a-8f0f-78766b969644'
           ]
         }

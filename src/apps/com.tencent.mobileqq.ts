@@ -42,7 +42,6 @@ export default defineGkdApp({
     {
       key: 1,
       name: '分段广告-动态页-好友热播',
-      key: 5,
       desc: '好友动态中的好友热播，自动选择“减少好友热播” - 默认关闭',
       enable: false,
       quickFind: true,

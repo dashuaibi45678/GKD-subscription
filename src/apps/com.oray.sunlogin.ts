@@ -31,9 +31,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
-          matches: [
-            '[text*="跳过"][text.length<10][visibleToUser=true]',
-          ],
+          matches: ['[text*="跳过"][text.length<10][visibleToUser=true]'],
         },
       ],
     },

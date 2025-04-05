@@ -22,7 +22,7 @@ export default defineGkdApp({
       ],
     },
     {
-      name: '开屏广告',
+      name: '开屏广告2',
       key: 1,
       quickFind: true,
       actionMaximum: 1,
